@@ -9,6 +9,8 @@ import com.outerspace.daggerscone.component.SconeComponent;
 import com.outerspace.daggerscone.model.Person;
 
 import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,10 +32,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         component.inject(this);
-
-        person.firstName = "Luis Jesús";
-        person.lastNameF = "Virueña";
-        person.lastNameM = "Silva";
 
         EditText edit;
         edit = (EditText) findViewById(R.id.first_name);
