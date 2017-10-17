@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DaggerScone</string>
+
+    <string name="intro">Add person\'s information</string>
+    <string name="first_name">First name</string>
+    <string name="last_name_f">Last name</string>
+    <string name="last_name_m">Last name (2nd)</string>
 </resources>
