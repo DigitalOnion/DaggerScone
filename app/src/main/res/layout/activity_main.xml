@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/first_name"/>
 
     <EditText
-        android:id="@+id/last_name"
+        android:id="@+id/last_name_f"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/txt_last_name_f"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:text="@string/last_name_m"
         app:layout_constraintLeft_toRightOf="@id/left_spacer"
-        app:layout_constraintTop_toBottomOf="@id/last_name"/>
+        app:layout_constraintTop_toBottomOf="@id/last_name_f"/>
 
     <EditText
         android:id="@+id/last_name_m"
