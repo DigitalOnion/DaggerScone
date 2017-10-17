@@ -4,22 +4,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 
+import com.outerspace.daggerscone.component.DaggerSconeComponent;
+import com.outerspace.daggerscone.component.SconeComponent;
 import com.outerspace.daggerscone.model.Person;
+
+import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Person person;
+    private SconeComponent component;
+
+    @Inject
+    public Person person;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        component = DaggerSconeComponent.builder().build();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        person = new Person();
+
+        component.inject(this);
+
         person.firstName = "Luis Jesús";
         person.lastNameF = "Virueña";
         person.lastNameM = "Silva";
