@@ -5,4 +5,10 @@
     <string name="first_name">First name</string>
     <string name="last_name_f">Last name</string>
     <string name="last_name_m">Last name (2nd)</string>
+    <string name="btn_change_person">change person object</string>
+
+    <string name="unknown_first_name">unknown name</string>
+    <string name="unknown_last_name_f">unknown father\'s last name</string>
+    <string name="unknown_last_name_m">unknown mother\'s last name</string>
+
 </resources>

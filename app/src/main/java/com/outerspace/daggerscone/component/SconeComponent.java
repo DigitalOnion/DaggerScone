@@ -4,11 +4,12 @@ import com.outerspace.daggerscone.MainActivity;
 import com.outerspace.daggerscone.model.Person;
 import com.outerspace.daggerscone.module.SconeModule;
 
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Component;
 
-@Singleton
+// @Singleton
 @Component(modules = {SconeModule.class} )
 public interface SconeComponent {
 
