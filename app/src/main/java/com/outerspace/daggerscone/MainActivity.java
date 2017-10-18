@@ -32,13 +32,6 @@ public class MainActivity extends AppCompatActivity {
         component = DaggerSconeComponent.builder().build();
         component.inject(this);
 
-        anyone.firstName = this.getResources().getString(R.string.unknown_first_name);
-        anyone.lastNameF = this.getResources().getString(R.string.unknown_last_name_f);
-        anyone.lastNameM = this.getResources().getString(R.string.unknown_last_name_m);
-
-        someone.firstName = "Luis Jesús";
-        someone.lastNameF = "Virueña";
-        someone.lastNameM = "Silva";
     }
 
     @Override

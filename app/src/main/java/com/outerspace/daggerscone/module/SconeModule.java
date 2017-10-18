@@ -12,10 +12,9 @@ import dagger.Provides;
 public class SconeModule {
 
     @Provides
-    // @Singleton
+    @Singleton
     public Person providePerson() {
         Person person = new Person();
-
         return person;
     }
 }

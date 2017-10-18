@@ -9,7 +9,7 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 
-// @Singleton
+@Singleton
 @Component(modules = {SconeModule.class} )
 public interface SconeComponent {
 
